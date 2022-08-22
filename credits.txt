@@ -1,0 +1,2 @@
+Thanks to nphhpn, who came up with with the general concept/implementation and added functionality for detecting entity hit detection.
+Thanks to CloudWolf, who extended the functionality of the data pack to cover player hit detection.
