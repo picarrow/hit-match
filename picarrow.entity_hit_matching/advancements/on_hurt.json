@@ -1,336 +1,6 @@
 {
   "criteria": {
-    "target": {
-      "trigger": "minecraft:entity_hurt_player",
-      "conditions": {
-        "damage": {
-          "source_entity": {
-            "type": "#picarrow.entity_hit_matching:targets"
-          }
-        }
-      }
-    },
-    "bit0": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_00_1\"]}"
-          }
-        }
-      }
-    },
-    "bit1": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_01_1\"]}"
-          }
-        }
-      }
-    },
-    "bit2": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_02_1\"]}"
-          }
-        }
-      }
-    },
-    "bit3": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_03_1\"]}"
-          }
-        }
-      }
-    },
-    "bit4": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_04_1\"]}"
-          }
-        }
-      }
-    },
-    "bit5": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_05_1\"]}"
-          }
-        }
-      }
-    },
-    "bit6": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_06_1\"]}"
-          }
-        }
-      }
-    },
-    "bit7": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_07_1\"]}"
-          }
-        }
-      }
-    },
-    "bit8": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_08_1\"]}"
-          }
-        }
-      }
-    },
-    "bit9": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_09_1\"]}"
-          }
-        }
-      }
-    },
-    "bit10": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_10_1\"]}"
-          }
-        }
-      }
-    },
-    "bit11": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_11_1\"]}"
-          }
-        }
-      }
-    },
-    "bit12": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_12_1\"]}"
-          }
-        }
-      }
-    },
-    "bit13": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_13_1\"]}"
-          }
-        }
-      }
-    },
-    "bit14": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_14_1\"]}"
-          }
-        }
-      }
-    },
-    "bit15": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_15_1\"]}"
-          }
-        }
-      }
-    },
-    "bit16": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_16_1\"]}"
-          }
-        }
-      }
-    },
-    "bit17": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_17_1\"]}"
-          }
-        }
-      }
-    },
-    "bit18": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_18_1\"]}"
-          }
-        }
-      }
-    },
-    "bit19": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_19_1\"]}"
-          }
-        }
-      }
-    },
-    "bit20": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_20_1\"]}"
-          }
-        }
-      }
-    },
-    "bit21": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_21_1\"]}"
-          }
-        }
-      }
-    },
-    "bit22": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_22_1\"]}"
-          }
-        }
-      }
-    },
-    "bit23": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_23_1\"]}"
-          }
-        }
-      }
-    },
-    "bit24": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_24_1\"]}"
-          }
-        }
-      }
-    },
-    "bit25": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_25_1\"]}"
-          }
-        }
-      }
-    },
-    "bit26": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_26_1\"]}"
-          }
-        }
-      }
-    },
-    "bit27": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_27_1\"]}"
-          }
-        }
-      }
-    },
-    "bit28": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_28_1\"]}"
-          }
-        }
-      }
-    },
-    "bit29": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_29_1\"]}"
-          }
-        }
-      }
-    },
-    "bit30": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_30_1\"]}"
-          }
-        }
-      }
-    },
-    "bit31": {
-      "trigger": "minecraft:entity_hurt_player",
-        "conditions": {
-          "damage": {
-            "source_entity": {
-              "nbt": "{Tags:[\"picarrow.ehm.id_31_1\"]}"
-          }
-        }
-      }
-    },
-    "!bit0": {
+    "bit_00_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -340,7 +10,7 @@
         }
       }
     },
-    "!bit1": {
+    "bit_01_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -350,7 +20,7 @@
         }
       }
     },
-    "!bit2": {
+    "bit_02_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -360,7 +30,7 @@
         }
       }
     },
-    "!bit3": {
+    "bit_03_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -370,7 +40,7 @@
         }
       }
     },
-    "!bit4": {
+    "bit_04_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -380,7 +50,7 @@
         }
       }
     },
-    "!bit5": {
+    "bit_05_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -390,7 +60,7 @@
         }
       }
     },
-    "!bit6": {
+    "bit_06_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -400,7 +70,7 @@
         }
       }
     },
-    "!bit7": {
+    "bit_07_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -410,7 +80,7 @@
         }
       }
     },
-    "!bit8": {
+    "bit_08_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -420,7 +90,7 @@
         }
       }
     },
-    "!bit9": {
+    "bit_09_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -430,7 +100,7 @@
         }
       }
     },
-    "!bit10": {
+    "bit_10_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -440,7 +110,7 @@
         }
       }
     },
-    "!bit11": {
+    "bit_11_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -450,7 +120,7 @@
         }
       }
     },
-    "!bit12": {
+    "bit_12_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -460,7 +130,7 @@
         }
       }
     },
-    "!bit13": {
+    "bit_13_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -470,7 +140,7 @@
         }
       }
     },
-    "!bit14": {
+    "bit_14_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -480,7 +150,7 @@
         }
       }
     },
-    "!bit15": {
+    "bit_15_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -490,7 +160,7 @@
         }
       }
     },
-    "!bit16": {
+    "bit_16_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -500,7 +170,7 @@
         }
       }
     },
-    "!bit17": {
+    "bit_17_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -510,7 +180,7 @@
         }
       }
     },
-    "!bit18": {
+    "bit_18_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -520,7 +190,7 @@
         }
       }
     },
-    "!bit19": {
+    "bit_19_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -530,7 +200,7 @@
         }
       }
     },
-    "!bit20": {
+    "bit_20_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -540,7 +210,7 @@
         }
       }
     },
-    "!bit21": {
+    "bit_21_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -550,7 +220,7 @@
         }
       }
     },
-    "!bit22": {
+    "bit_22_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -560,7 +230,7 @@
         }
       }
     },
-    "!bit23": {
+    "bit_23_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -570,7 +240,7 @@
         }
       }
     },
-    "!bit24": {
+    "bit_24_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -580,7 +250,7 @@
         }
       }
     },
-    "!bit25": {
+    "bit_25_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -590,7 +260,7 @@
         }
       }
     },
-    "!bit26": {
+    "bit_26_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -600,7 +270,7 @@
         }
       }
     },
-    "!bit27": {
+    "bit_27_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -610,7 +280,7 @@
         }
       }
     },
-    "!bit28": {
+    "bit_28_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -620,7 +290,7 @@
         }
       }
     },
-    "!bit29": {
+    "bit_29_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -630,7 +300,7 @@
         }
       }
     },
-    "!bit30": {
+    "bit_30_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -640,7 +310,7 @@
         }
       }
     },
-    "!bit31": {
+    "bit_31_0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
           "damage": {
@@ -649,139 +319,456 @@
           }
         }
       }
+    },
+    "bit_00_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_00_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_01_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_01_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_02_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_02_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_03_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_03_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_04_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_04_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_05_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_05_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_06_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_06_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_07_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_07_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_08_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_08_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_09_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_09_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_10_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_10_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_11_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_11_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_12_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_12_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_13_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_13_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_14_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_14_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_15_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_15_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_16_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_16_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_17_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_17_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_18_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_18_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_19_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_19_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_20_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_20_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_21_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_21_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_22_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_22_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_23_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_23_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_24_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_24_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_25_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_25_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_26_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_26_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_27_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_27_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_28_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_28_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_29_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_29_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_30_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_30_1\"]}"
+          }
+        }
+      }
+    },
+    "bit_31_1": {
+      "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "nbt": "{Tags:[\"picarrow.ehm.id_31_1\"]}"
+          }
+        }
+      }
     }
   },
   "requirements": [
     [
-      "target"
+      "bit_00_0",
+      "bit_00_1"
     ],
     [
-      "bit0",
-      "!bit0"
+      "bit_01_0",
+      "bit_01_1"
     ],
     [
-      "bit1",
-      "!bit1"
+      "bit_02_0",
+      "bit_02_1"
     ],
     [
-      "bit2",
-      "!bit2"
+      "bit_03_0",
+      "bit_03_1"
     ],
     [
-      "bit3",
-      "!bit3"
+      "bit_04_0",
+      "bit_04_1"
     ],
     [
-      "bit4",
-      "!bit4"
+      "bit_05_0",
+      "bit_05_1"
     ],
     [
-      "bit5",
-      "!bit5"
+      "bit_06_0",
+      "bit_06_1"
     ],
     [
-      "bit6",
-      "!bit6"
+      "bit_07_0",
+      "bit_07_1"
     ],
     [
-      "bit7",
-      "!bit7"
+      "bit_08_0",
+      "bit_08_1"
     ],
     [
-      "bit8",
-      "!bit8"
+      "bit_09_0",
+      "bit_09_1"
     ],
     [
-      "bit9",
-      "!bit9"
+      "bit_10_0",
+      "bit_10_1"
     ],
     [
-      "bit10",
-      "!bit10"
+      "bit_11_0",
+      "bit_11_1"
     ],
     [
-      "bit11",
-      "!bit11"
+      "bit_12_0",
+      "bit_12_1"
     ],
     [
-      "bit12",
-      "!bit12"
+      "bit_13_0",
+      "bit_13_1"
     ],
     [
-      "bit13",
-      "!bit13"
+      "bit_14_0",
+      "bit_14_1"
     ],
     [
-      "bit14",
-      "!bit14"
+      "bit_15_0",
+      "bit_15_1"
     ],
     [
-      "bit15",
-      "!bit15"
+      "bit_16_0",
+      "bit_16_1"
     ],
     [
-      "bit16",
-      "!bit16"
+      "bit_17_0",
+      "bit_17_1"
     ],
     [
-      "bit17",
-      "!bit17"
+      "bit_18_0",
+      "bit_18_1"
     ],
     [
-      "bit18",
-      "!bit18"
+      "bit_19_0",
+      "bit_19_1"
     ],
     [
-      "bit19",
-      "!bit19"
+      "bit_20_0",
+      "bit_20_1"
     ],
     [
-      "bit20",
-      "!bit20"
+      "bit_21_0",
+      "bit_21_1"
     ],
     [
-      "bit21",
-      "!bit21"
+      "bit_22_0",
+      "bit_22_1"
     ],
     [
-      "bit22",
-      "!bit22"
+      "bit_23_0",
+      "bit_23_1"
     ],
     [
-      "bit23",
-      "!bit23"
+      "bit_24_0",
+      "bit_24_1"
     ],
     [
-      "bit24",
-      "!bit24"
+      "bit_25_0",
+      "bit_25_1"
     ],
     [
-      "bit25",
-      "!bit25"
+      "bit_26_0",
+      "bit_26_1"
     ],
     [
-      "bit26",
-      "!bit26"
+      "bit_27_0",
+      "bit_27_1"
     ],
     [
-      "bit27",
-      "!bit27"
+      "bit_28_0",
+      "bit_28_1"
     ],
     [
-      "bit28",
-      "!bit28"
+      "bit_29_0",
+      "bit_29_1"
     ],
     [
-      "bit29",
-      "!bit29"
+      "bit_30_0",
+      "bit_30_1"
     ],
     [
-      "bit30",
-      "!bit30"
-    ],
-    [
-      "bit31",
-      "!bit31"
+      "bit_31_0",
+      "bit_31_1"
     ]
   ],
   "rewards": {
