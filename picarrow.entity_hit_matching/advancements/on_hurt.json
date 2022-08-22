@@ -772,6 +772,6 @@
     ]
   ],
   "rewards": {
-    "function": "picarrow.entity_hit_matching:reward_on_hurt"
+    "function": "picarrow.entity_hit_matching:on_hurt/reward"
   }
 }

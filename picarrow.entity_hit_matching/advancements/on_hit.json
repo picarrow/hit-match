@@ -644,6 +644,6 @@
     ]
   ],
   "rewards": {
-    "function": "picarrow.entity_hit_matching:reward_on_hit"
+    "function": "picarrow.entity_hit_matching:on_hit/reward"
   }
 }

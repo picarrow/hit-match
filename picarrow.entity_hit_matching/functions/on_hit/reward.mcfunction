@@ -1,0 +1,3 @@
+function picarrow.entity_hit_matching:action/player_hits_target
+function picarrow.entity_hit_matching:on_hit/find_entity
+advancement revoke @s only picarrow.entity_hit_matching:on_hit
