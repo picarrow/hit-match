@@ -31,4 +31,4 @@ execute if entity @s[advancements={picarrow.entity_hit_matching:on_hurt={bit_28_
 execute if entity @s[advancements={picarrow.entity_hit_matching:on_hurt={bit_29_1=true}}] run scoreboard players add #id_of_struck_entity picarrow.ehm.id 536870912
 execute if entity @s[advancements={picarrow.entity_hit_matching:on_hurt={bit_30_1=true}}] run scoreboard players add #id_of_struck_entity picarrow.ehm.id 1073741824
 execute if entity @s[advancements={picarrow.entity_hit_matching:on_hurt={bit_31_1=true}}] run scoreboard players operation #id_of_struck_entity picarrow.ehm.id *= #-1 picarrow.ehm.id
-execute as @e if score @s picarrow.ehm.id = #id_of_struck_entity picarrow.ehm.id run function picarrow.entity_hit_matching:action/target_hits_player
+execute as @e[type=#picarrow.entity_hit_matching:targets] if score @s picarrow.ehm.id = #id_of_struck_entity picarrow.ehm.id run tag @s add picarrow.ehm.target
