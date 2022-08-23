@@ -1,2 +1,0 @@
-Thanks to nphhpn, who came up with with the general concept/implementation and added functionality for detecting what entity is hurt by a player.
-Thanks to CloudWolf, who extended the functionality of the data pack to detect what entity hit a player.
