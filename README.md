@@ -4,7 +4,7 @@ The namespace provides a way to reliably detect the entity that hit or was hurt 
 
 ### How to Use
 To install it, simply add the namespace to the data folder of your data pack.
-Edit the target_hits_player and target_is_hurt_by_player functions in the action folder to your liking.
+Edit the target_hits_player and target_is_hurt_by_player functions in the event folder to your liking.
 The execution position and context of these functions is already set to the target entity.
 The player that interacted with the target entity can be located with the tag picarrow.ehm.player.
 Be very careful not to create an infinite loop in either of these functions.
