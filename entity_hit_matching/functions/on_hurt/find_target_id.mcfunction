@@ -1,17 +1,21 @@
 ## AUTHOR: Picarrow, CloudWolf, nphhpn
 
 scoreboard players set #target_id ehm._ 0
-execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_00_1=true}}] run scoreboard players add #target_id ehm._ 1
-execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_01_1=true}}] run scoreboard players add #target_id ehm._ 2
-execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_02_1=true}}] run scoreboard players add #target_id ehm._ 4
-execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_03_1=true}}] run scoreboard players add #target_id ehm._ 8
-execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_04_1=true}}] run scoreboard players add #target_id ehm._ 16
-execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_05_1=true}}] run scoreboard players add #target_id ehm._ 32
-execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_06_1=true}}] run scoreboard players add #target_id ehm._ 64
-execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_07_1=true}}] run scoreboard players add #target_id ehm._ 128
-execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_08_1=true}}] run scoreboard players add #target_id ehm._ 256
-execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_09_1=true}}] run scoreboard players add #target_id ehm._ 512
-execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_10_1=true}}] run scoreboard players add #target_id ehm._ 1024
-execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_11_1=true}}] run scoreboard players add #target_id ehm._ 2048
-execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_12_1=true}}] run scoreboard players add #target_id ehm._ 4096
-execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_13_1=true}}] run scoreboard players add #target_id ehm._ 8192
+execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_0_1=true}}] run scoreboard players add #target_id ehm._ 1
+execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_0_2=true}}] run scoreboard players add #target_id ehm._ 2
+execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_1_1=true}}] run scoreboard players add #target_id ehm._ 3
+execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_1_2=true}}] run scoreboard players add #target_id ehm._ 6
+execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_2_1=true}}] run scoreboard players add #target_id ehm._ 9
+execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_2_2=true}}] run scoreboard players add #target_id ehm._ 18
+execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_3_1=true}}] run scoreboard players add #target_id ehm._ 27
+execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_3_2=true}}] run scoreboard players add #target_id ehm._ 54
+execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_4_1=true}}] run scoreboard players add #target_id ehm._ 81
+execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_4_2=true}}] run scoreboard players add #target_id ehm._ 162
+execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_5_1=true}}] run scoreboard players add #target_id ehm._ 243
+execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_5_2=true}}] run scoreboard players add #target_id ehm._ 486
+execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_6_1=true}}] run scoreboard players add #target_id ehm._ 729
+execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_6_2=true}}] run scoreboard players add #target_id ehm._ 1458
+execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_7_1=true}}] run scoreboard players add #target_id ehm._ 2187
+execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_7_2=true}}] run scoreboard players add #target_id ehm._ 4374
+execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_8_1=true}}] run scoreboard players add #target_id ehm._ 6561
+execute if entity @s[advancements={entity_hit_matching:on_hurt={bit_8_2=true}}] run scoreboard players add #target_id ehm._ 13122
