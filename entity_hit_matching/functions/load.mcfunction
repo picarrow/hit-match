@@ -1,6 +1,4 @@
 ## AUTHOR: Picarrow, CloudWolf, nphhpn
 
 scoreboard objectives add ehm._ dummy
-scoreboard players set #loaded ehm._ 1
-scoreboard players set #-1 ehm._ -1
-scoreboard players set #2 ehm._ 2
+execute unless score $loaded ehm._ = $loaded ehm._ run function entity_hit_matching:set_defaults
