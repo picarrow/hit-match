@@ -6,7 +6,7 @@ The namespace provides a way to reliably detect the entity that hit or was hurt 
 To install it, simply add the namespace to the data folder of your data pack.
 Edit the target_hits_player and target_is_hurt_by_player functions in the event folder to your liking.
 The execution position and context of these functions is already set to the target entity.
-The player that interacted with the target entity can be located with the tag picarrow.ehm.player.
+The player that interacted with the target entity can be located with the tag ehm.player.
 Be very careful not to create an infinite loop in either of these functions.
 As it affects performance, it is recommended that you change the entity tag "targets" to include only the entities you wish to work with.
 By default, the targets entity tag includes zombies, husks, and drowneds.
