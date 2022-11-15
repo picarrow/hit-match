@@ -15,6 +15,7 @@ By default, the targets entity tag includes zombies, husks, and drowneds.
 Thanks to nphhpn, who:
  - theorized the general concept and implementation
  - added functionality that reliably detects what entity was hurt by a player
+
 Thanks to CloudWolf, who:
  - adapted the implementation to work for the entity_hurt_player advancement trigger
  - added functionality that reliably detects what entity hit a player
