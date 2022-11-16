@@ -1,4 +1,4 @@
 ## AUTHOR: Picarrow, CloudWolf, nphhpn
 
-# Guarantees tick only runs after the initial load
-execute if score $loaded ehm._ matches 1 run function entity_hit_matching:tick_1
+# Assigns an id to every target without one
+execute if score #loaded ehm._ matches 1 as @e[type=#entity_hit_matching:targets] unless score @s ehm._ = @s ehm._ run function entity_hit_matching:id/assign
