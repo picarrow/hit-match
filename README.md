@@ -3,13 +3,20 @@ This data pack namespace is intended to serve as a tool for other data packs.
 The namespace provides a way to reliably detect the entity that hit or was hurt by a player.
 
 ### How to Use
-To install it, simply add the namespace to the data folder of your data pack.
-Edit the target_hits_player and target_is_hurt_by_player functions in the event folder to your liking.
-The execution position and context of these functions is already set to the target entity.
-The player that interacted with the target entity can be located with the tag ehm.player.
-Be very careful not to create an infinite loop in either of these functions.
-As it affects performance, it is recommended that you change the entity tag "targets" to include only the entities you wish to work with.
-By default, the targets entity tag includes zombies, husks, and drowneds.
+1. To install it, simply add the namespace to the data folder of your data pack.
+2. Edit the entity types tag "targets" to only include the entities you wish to detect.
+Adding more entities than necessary will result in a performance reduction.
+Entities specified in this file are refered to as target entities.
+3. The namespace fires off two events that you can associate function to:
+ - The event "target_hits_player" occurs when a target entity hits a player
+ - The event "target_is_hurt_by_player" occurs when a target entity is hurt by a player
+
+Add the functions you wish for an event to trigger to the event's associated function tag.
+The executor of the functions ran by these function tags is the target entity.
+The execution position, rotation, and dimension are set to that of the player.
+The player that interacted with the target entity is also tagged with the entity tag "ehm.player".
+
+4. Be very careful not to create an infinite loop in either of these functions.
 
 ### Credit
 Thanks to nphhpn, who:
