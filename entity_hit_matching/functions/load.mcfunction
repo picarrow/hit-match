@@ -1,4 +1,3 @@
 ## AUTHOR: Picarrow, CloudWolf, nphhpn
 
-scoreboard objectives add ehm._ dummy
-execute unless score #loaded ehm._ = #loaded ehm._ run function entity_hit_matching:set_defaults
+execute unless data storage entity_hit_matching:data {loaded:1b} run function entity_hit_matching:load_initial
