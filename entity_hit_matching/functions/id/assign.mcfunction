@@ -4,7 +4,7 @@
 function entity_hit_matching:id/remove_tags
 
 # Assigns an id to the executor
-execute if score #next_id ehm._ matches 19683.. run function entity_hit_matching:set_defaults
+execute if score #next_id ehm._ matches 19683.. run function entity_hit_matching:id/reset_all
 scoreboard players operation @s ehm._ = #next_id ehm._
 scoreboard players add #next_id ehm._ 1
 
