@@ -1,5 +1,13 @@
 {
   "criteria": {
+    "target": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "#entity_hit_matching:targets"
+        }
+      }
+    },
     "bit_0_0": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
@@ -219,6 +227,9 @@
   },
   "requirements": [
     [
+      "target"
+    ],
+    [
       "bit_0_0",
       "bit_0_1",
       "bit_0_2"
@@ -265,6 +276,6 @@
     ]
   ],
   "rewards": {
-    "function": "entity_hit_matching:on_hit/reward"
+    "function": "entity_hit_matching:hurt_target/reward"
   }
 }
