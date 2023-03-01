@@ -1,4 +1,4 @@
-# Entity Hit Matching v1.1.0
+# Entity Hit Matching
 This data pack namespace is intended to serve as a tool for other data packs.
 It provides a reliable way to detect entities that exchange damage with players.
 
@@ -13,7 +13,7 @@ It provides a reliable way to detect entities that exchange damage with players.
 * External functions are executed in relation to the entity receiving damage.
     * The executor is that entity.
     * The execution position, rotation, and dimension are that of that entity.
-* Assuming the execution context wasn't changed, the entity dealing the damage can be obtained using the `on attacker` subcommand of `execute`.
+* Assuming the execution context hasn't changed, the entity dealing the damage can be obtained using the 'on attacker' subcommand of 'execute'.
 
 ## Credit
 Thanks to [@nphhpn](https://github.com/nphhpn), who theorized the general concept and implementation.
