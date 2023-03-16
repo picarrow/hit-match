@@ -1,8 +1,8 @@
-## AUTHOR: Picarrow, CloudWolf, nphhpn
+## AUTHOR : Picarrow, CloudWolf, nphhpn
 
-# This objective tracks ids, temporary variables, and constants
+# This objective tracks IDs, along with variables and constants
 scoreboard objectives add ehm._ dummy
 scoreboard players set #3 ehm._ 3
 
-# Signifies the data pack is loaded so that it can't be initialized again
-data merge storage entity_hit_matching:data {loaded:1b}
+# Indicates the data pack has been initialized
+data modify storage entity_hit_matching:data root.loaded set value 1b

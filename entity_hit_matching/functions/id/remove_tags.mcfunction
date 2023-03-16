@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow, CloudWolf, nphhpn
+## AUTHOR : Picarrow, CloudWolf, nphhpn
 
 tag @s remove ehm.0_0
 tag @s remove ehm.0_1
