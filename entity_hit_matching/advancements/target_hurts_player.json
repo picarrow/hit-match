@@ -4,8 +4,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "type": "#entity_hit_matching:targets"
+          "type": {
+            "direct_entity": {
+              "type": "#entity_hit_matching:targets"
+            }
           }
         }
       }
@@ -14,8 +16,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.0_0\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.0_0\"]}"
+            }
           }
         }
       }
@@ -24,8 +28,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.1_0\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.1_0\"]}"
+            }
           }
         }
       }
@@ -34,8 +40,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.2_0\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.2_0\"]}"
+            }
           }
         }
       }
@@ -44,8 +52,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.3_0\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.3_0\"]}"
+            }
           }
         }
       }
@@ -54,8 +64,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.4_0\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.4_0\"]}"
+            }
           }
         }
       }
@@ -64,8 +76,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.5_0\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.5_0\"]}"
+            }
           }
         }
       }
@@ -74,8 +88,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.6_0\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.6_0\"]}"
+            }
           }
         }
       }
@@ -84,8 +100,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.7_0\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.7_0\"]}"
+            }
           }
         }
       }
@@ -94,8 +112,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.8_0\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.8_0\"]}"
+            }
           }
         }
       }
@@ -104,8 +124,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.0_1\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.0_1\"]}"
+            }
           }
         }
       }
@@ -114,8 +136,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.1_1\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.1_1\"]}"
+            }
           }
         }
       }
@@ -124,8 +148,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.2_1\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.2_1\"]}"
+            }
           }
         }
       }
@@ -134,8 +160,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.3_1\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.3_1\"]}"
+            }
           }
         }
       }
@@ -144,8 +172,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.4_1\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.4_1\"]}"
+            }
           }
         }
       }
@@ -154,8 +184,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.5_1\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.5_1\"]}"
+            }
           }
         }
       }
@@ -164,8 +196,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.6_1\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.6_1\"]}"
+            }
           }
         }
       }
@@ -174,8 +208,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.7_1\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.7_1\"]}"
+            }
           }
         }
       }
@@ -184,8 +220,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.8_1\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.8_1\"]}"
+            }
           }
         }
       }
@@ -194,8 +232,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.0_2\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.0_2\"]}"
+            }
           }
         }
       }
@@ -204,8 +244,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.1_2\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.1_2\"]}"
+            }
           }
         }
       }
@@ -214,8 +256,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.2_2\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.2_2\"]}"
+            }
           }
         }
       }
@@ -224,8 +268,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.3_2\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.3_2\"]}"
+            }
           }
         }
       }
@@ -234,8 +280,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.4_2\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.4_2\"]}"
+            }
           }
         }
       }
@@ -244,8 +292,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.5_2\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.5_2\"]}"
+            }
           }
         }
       }
@@ -254,8 +304,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.6_2\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.6_2\"]}"
+            }
           }
         }
       }
@@ -264,8 +316,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.7_2\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.7_2\"]}"
+            }
           }
         }
       }
@@ -274,8 +328,10 @@
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
-          "source_entity": {
-            "nbt": "{Tags:[\"ehm.8_2\"]}"
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"ehm.8_2\"]}"
+            }
           }
         }
       }
