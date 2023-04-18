@@ -23,7 +23,7 @@ The target entity being dealt damage is the executor of this function tag.
 The execution position, rotation, and dimension of this function tag are also that of that entity.
 The player dealing the damage can be referenced using 'execute on attacker'.
 
-Projectiles of an attacking player can be referenced using 'execute as @e if score @s ehm._ = $_drt_id ehm._'.
+Projectiles of an attacking player can be referenced using 'execute as @e if score @s ehm.\_ = $\_drt\_id ehm.\_'.
 If there is no projectile in the interaction, then the aforementioned execute fragment just returns the attacking player.
 ### Function Tag: 'player_is_hurt_by_target'
 Add the functions you wish to execute when a player is damaged by a target entity to this function tag.
@@ -31,7 +31,7 @@ The player being dealt damage is the executor of this function tag.
 The execution position, rotation, and dimension of this function tag are also that of that player.
 The mob dealing the damage can be referenced using 'execute on attacker'.
 
-Projectiles of an attacking mob can be referenced using 'execute as @e if score @s ehm._ = $_drt_id ehm._'.
+Projectiles of an attacking mob can be referenced using 'execute as @e if score @s ehm.\_ = $\_drt\_id ehm.\_'.
 If there is no projectile in the interaction, then the aforementioned execute fragment just returns the attacking entity.
 This can be used to target target entities that aren't a mob such as falling dripstone.
 ## Credit
