@@ -8,31 +8,33 @@ You are intended to interface with the namespace by altering only the data pack 
 By keeping your modifications within these tags, compatibility across data packs should be easier to maintain.
 There is one entity type tag, and there are two function tags for you to modify.
 ### Entity Type Tag: 'targets'
-The members of entity type tag '***targets***', referred to as **target entities**, are ID-able by the library, which enables them to be detectable.
-It is important to note that adding an entity to this list does not cover that entity's projectile entities; those must be added individually.
-Keep in mind, adding more entities than necessary may result in greater performance costs.
+The members of entity type tag '***targets***', referred to as **target entities**, are ID-able by the library, which enables them to be detectable.  
+It is important to note that adding an entity to this list does not cover that entity's projectile entities; those must be added individually.  
+Keep in mind, adding more entities than necessary may result in greater performance costs.  
 **DO NOT** remove 'minecraft:player' from the list.
 
-Example:
-If you want to detect a player damaging a skeleton or a skeleton meleeing a player, you must add 'minecraft:skeleton'.
+Examples:  
+If you want to detect a player damaging a skeleton or a skeleton meleeing a player, you must add 'minecraft:skeleton'.  
 And if you want to detect a skeleton shooting a player, you must also add 'minecraft:arrow'.
 ### Function Tags: target_is_hurt_by_player & player_is_hurt_by_target
 These two function tags behave similarly.
-They are executed when a target entity exchanges damage with a player.
-'**_target_is_hurt_by_player_**' is executed when a *target entity is damaged by a player*.
-'**_player_is_hurt_by_target_**' is executed when a *player is damaged by a target entity*.
+They are executed when a target entity exchanges damage with a player.  
+'**_target_is_hurt_by_player_**' is executed when a *target entity is damaged by a player*.  
+'**_player_is_hurt_by_target_**' is executed when a *player is damaged by a target entity*.  
 Add the functions you wish to execute on an event to the event's respective function tag.
+<details>
+<summary>Definitions!</summary>
 
-Some definitions to simplify explanation:
-**Victim** Entity - the entity being dealt the damage
-**Source** Entity - the entity responsible for dealing the damage
+**Victim Entity** - the entity being dealt the damage  
+**Source Entity** - the entity responsible for dealing the damage  
 **Direct Entity** - the entity that actually dealt the damage
+</details>
 
-The victim is always the executor of these function tags.
+The victim is always the executor of these function tags.  
 The execution position, rotation, and dimension are also that of the victim.
 
-The direct entity can be referenced using '**execute as @e if score @s ehm.\_ = $\_drt\_id ehm.\_**'.
-If the direct entity is a projectile, it'll likely have a source.
+The direct entity can be referenced using '**execute as @e if score @s ehm.\_ = $\_drt\_id ehm.\_**'.  
+If the direct entity is a projectile, it'll likely have a source.  
 The source can be referenced using '**execute as @e if score @s ehm.\_ = $\_drt\_id ehm.\_ _on_ _origin_**'.
 
 '**execute on attacker**' can be used as a shortcut to reference *living* source entities.
