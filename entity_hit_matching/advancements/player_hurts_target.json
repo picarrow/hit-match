@@ -22,16 +22,16 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "ehm._": {
+                "ehm.id": {
                   "min": {
                     "type": "minecraft:score",
                     "target": "this",
-                    "score": "ehm._"
+                    "score": "ehm.id"
                   },
                   "max": {
                     "type": "minecraft:score",
                     "target": "this",
-                    "score": "ehm._"
+                    "score": "ehm.id"
                   }
                 }
               }
@@ -372,7 +372,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.0": 0
+              "ehm.id.0": 0
             }
           }
         ]
@@ -386,7 +386,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.0": 1
+              "ehm.id.0": 1
             }
           }
         ]
@@ -400,7 +400,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.0": 2
+              "ehm.id.0": 2
             }
           }
         ]
@@ -414,7 +414,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.1": 0
+              "ehm.id.1": 0
             }
           }
         ]
@@ -428,7 +428,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.1": 1
+              "ehm.id.1": 1
             }
           }
         ]
@@ -442,7 +442,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.1": 2
+              "ehm.id.1": 2
             }
           }
         ]
@@ -456,7 +456,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.2": 0
+              "ehm.id.2": 0
             }
           }
         ]
@@ -470,7 +470,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.2": 1
+              "ehm.id.2": 1
             }
           }
         ]
@@ -484,7 +484,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.2": 2
+              "ehm.id.2": 2
             }
           }
         ]
@@ -498,7 +498,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.3": 0
+              "ehm.id.3": 0
             }
           }
         ]
@@ -512,7 +512,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.3": 1
+              "ehm.id.3": 1
             }
           }
         ]
@@ -526,7 +526,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.3": 2
+              "ehm.id.3": 2
             }
           }
         ]
@@ -540,7 +540,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.4": 0
+              "ehm.id.4": 0
             }
           }
         ]
@@ -554,7 +554,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.4": 1
+              "ehm.id.4": 1
             }
           }
         ]
@@ -568,7 +568,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.4": 2
+              "ehm.id.4": 2
             }
           }
         ]
@@ -582,7 +582,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.5": 0
+              "ehm.id.5": 0
             }
           }
         ]
@@ -596,7 +596,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.5": 1
+              "ehm.id.5": 1
             }
           }
         ]
@@ -610,7 +610,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.5": 2
+              "ehm.id.5": 2
             }
           }
         ]
@@ -624,7 +624,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.6": 0
+              "ehm.id.6": 0
             }
           }
         ]
@@ -638,7 +638,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.6": 1
+              "ehm.id.6": 1
             }
           }
         ]
@@ -652,7 +652,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.6": 2
+              "ehm.id.6": 2
             }
           }
         ]
@@ -666,7 +666,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.7": 0
+              "ehm.id.7": 0
             }
           }
         ]
@@ -680,7 +680,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.7": 1
+              "ehm.id.7": 1
             }
           }
         ]
@@ -694,7 +694,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.7": 2
+              "ehm.id.7": 2
             }
           }
         ]
@@ -708,7 +708,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.8": 0
+              "ehm.id.8": 0
             }
           }
         ]
@@ -722,7 +722,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.8": 1
+              "ehm.id.8": 1
             }
           }
         ]
@@ -736,7 +736,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "ehm.8": 2
+              "ehm.id.8": 2
             }
           }
         ]

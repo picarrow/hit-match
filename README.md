@@ -33,9 +33,9 @@ Add the functions you wish to execute on an event to the event's respective func
 The victim is always the executor of these function tags.  
 The execution position, rotation, and dimension are also that of the victim.
 
-The direct entity can be referenced using '**execute as @e if score @s ehm.\_ = $\_drt\_id ehm.\_**'.  
+The direct entity can be referenced using '**execute as @e if score @s ehm.id = $direct ehm.id ...**'.  
 If the direct entity is a projectile, it'll likely have a source.  
-The source can be referenced using '**execute as @e if score @s ehm.\_ = $\_drt\_id ehm.\_ _on_ _origin_**'.
+The source entity can be referenced using '**execute as @e if score @s ehm.id = $direct ehm.id _on_ _origin_ ...**'.
 
 '**execute on attacker**' can be used as a shortcut to reference *living* source entities.
 ## Credit
