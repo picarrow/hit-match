@@ -1,9 +1,11 @@
 # Entity Hit Matching
 This data pack namespace is intended to serve as a library for other data packs.
 It provides a reliable way to detect entities that exchange damage with players.
-
 ## How to Use
-Before you can use it, the namespace must be installed; simply add it to the data folder of your data pack.
+Before you can use it, the namespace must be installed.
+First, add the namespace to the data folder of your data pack.
+Then, call the 'entity_hit_matching:load' and 'entity_hit_matching:tick' functions from the 'minecraft:#load' and 'minecraft:#tick' function tags respectively.
+
 You are intended to interface with the namespace by altering only the data pack tags inside the namespace.
 By keeping your modifications within these tags, compatibility across data packs should be easier to maintain.
 There is one entity type tag, and there are two function tags for you to modify.
@@ -33,12 +35,27 @@ Add the functions you wish to execute on an event to the event's respective func
 The victim is always the executor of these function tags.  
 The execution position, rotation, and dimension are also that of the victim.
 
-The direct entity can be referenced using '**execute as @e if score @s ehm.id = $direct ehm.id ...**'.  
+The direct entity can be referenced using '**/execute as @e if score @s ehm.id = $direct ehm.id ...**'.  
 If the direct entity is a projectile, it'll likely have a source.  
-The source entity can be referenced using '**execute as @e if score @s ehm.id = $direct ehm.id _on_ _origin_ ...**'.
+The source entity can be referenced using '**/execute as @e if score @s ehm.id = $direct ehm.id _on_ _origin_ ...**'.  
+'**/execute on attacker**' can be used as a shortcut to reference *living* source entities.
+## Caveat of '/damage'
+When '/damage' is used to exchange damage between a player and another entity, it may come with an unnecessary performance cost.
+This is because the command can trigger the 'player_hurt_entity' and 'entity_hurt_player' advancement triggers, which fire expensive criteria checks.
+It is highly recommended that you temporarily disable hit detection for players that are the victim or source entity.
+The following code sample demonstrates how to do this:
+```
+# Disable Hit Detection
+execute as PersonA run function entity_hit_matching:_/off
+execute as PersonB run function entity_hit_matching:_/off
 
-'**execute on attacker**' can be used as a shortcut to reference *living* source entities.
+# PersonA is the victim, and PersonB is the source
+damage PersonA 5 minecraft:generic by PersonB from PersonC
+
+# Re-enable Hit Detection
+execute as PersonA run function entity_hit_matching:_/on
+execute as PersonB run function entity_hit_matching:_/on
+```
 ## Credit
-Thanks to [@nphhpn](https://github.com/nphhpn), who theorized the general concept and implementation.
-
+Thanks to [@nphhpn](https://github.com/nphhpn), who theorized the general concept and implementation.  
 Thanks to [@CloudWolfYT](https://github.com/CloudWolfYT), who adapted the implementation to work with command tags.
