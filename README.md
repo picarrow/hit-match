@@ -1,4 +1,4 @@
-# Entity Hit Matching
+# Entity Hit Matching v1.3.0
 This data pack namespace is intended to serve as a library for other data packs.
 It provides a reliable way to detect entities that exchange damage with players.
 ## How to Use
