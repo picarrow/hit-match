@@ -1,4 +1,4 @@
-## AUTHOR : Picarrow, CloudWolf, nphhpn
+## AUTHOR : Picarrow
 
 scoreboard players set $victim ehm.id 0
 execute if entity @s[advancements={entity_hit_matching:player_hurts_target={vtm_bit_0_1=true}}] run scoreboard players add $victim ehm.id 1

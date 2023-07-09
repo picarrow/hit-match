@@ -1,15 +1,15 @@
-## AUTHOR : Picarrow, CloudWolf, nphhpn
+## AUTHOR : Picarrow
 
-# Removes existing ID-related function tags from the executor
+# Remove existing ID-related command tags from the executor
 function entity_hit_matching:id/remove_tags
 
-# Assigns a new ID to the executor
+# Assign a new ID to the executor
 execute if score #next_id ehm.id matches 19683.. run function entity_hit_matching:id/reset_all
 scoreboard players operation @s ehm.id = #next_id ehm.id
 scoreboard players add #next_id ehm.id 1
 
-# Appends ID-related function tags to the executor
-# These function tags represent the ID's ternary representation
+# Append ID-related command tags to the executor
+# They represent the ID's ternary representation
 scoreboard players operation #_temp_id ehm.id = @s ehm.id
 
 function entity_hit_matching:id/next_bit

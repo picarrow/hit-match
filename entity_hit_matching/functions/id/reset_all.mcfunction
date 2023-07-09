@@ -1,4 +1,4 @@
-## AUTHOR : Picarrow, CloudWolf, nphhpn
+## AUTHOR : Picarrow
 
 scoreboard players reset * ehm.id
 scoreboard players set #3 ehm.id 3

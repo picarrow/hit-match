@@ -1,4 +1,4 @@
-## AUTHOR : Picarrow, CloudWolf, nphhpn
+## AUTHOR : Picarrow
 
 scoreboard players set #_override ehm.id 1
 advancement grant @s only entity_hit_matching:player_hurts_target

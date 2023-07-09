@@ -1,4 +1,4 @@
-## AUTHOR : Picarrow, CloudWolf, nphhpn
+## AUTHOR : Picarrow
 
 tag @s[tag=ehm.no_id] remove ehm.no_id
 tag @s[tag=ehm.0_0] remove ehm.0_0
