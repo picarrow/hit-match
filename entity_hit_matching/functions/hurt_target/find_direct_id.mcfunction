@@ -1,5 +1,6 @@
 ## AUTHOR : Picarrow, CloudWolf, nphhpn
 
+scoreboard players set $direct ehm.id 0
 execute if entity @s[advancements={entity_hit_matching:player_hurts_target={drt_bit_0_1=true}}] run scoreboard players add $direct ehm.id 1
 execute if entity @s[advancements={entity_hit_matching:player_hurts_target={drt_bit_0_2=true}}] run scoreboard players add $direct ehm.id 2
 execute if entity @s[advancements={entity_hit_matching:player_hurts_target={drt_bit_1_1=true}}] run scoreboard players add $direct ehm.id 3
