@@ -1,5 +1,5 @@
-***Download Stable Versions from [Releases](https://github.com/picarrow/entity-hit-matching/releases)***
-# Entity Hit Matching v1.3.1
+***Download Stable Versions from [Releases](https://github.com/picarrow/hit-match/releases)***
+# Hit Match v1.4.0
 This data pack namespace is intended to serve as a library for other data packs.
 It provides a reliable way to detect entities that exchange damage with players.
 ## How to Use
