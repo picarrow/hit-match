@@ -9,7 +9,7 @@
           "type": "minecraft:fixed",
           "name": "$victim"
         },
-        "score": "ehm.id"
+        "score": "ehm._"
       },
       "max": {
         "type": "minecraft:score",
@@ -17,7 +17,7 @@
           "type": "minecraft:fixed",
           "name": "$victim"
         },
-        "score": "ehm.id"
+        "score": "ehm._"
       }
     }
   }

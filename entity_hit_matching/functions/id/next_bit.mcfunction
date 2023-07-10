@@ -1,5 +1,5 @@
 ## AUTHOR : Picarrow
 
-scoreboard players operation #_bit ehm.id = #_temp_id ehm.id
-scoreboard players operation #_bit ehm.id %= #3 ehm.id
-scoreboard players operation #_temp_id ehm.id /= #3 ehm.id
+scoreboard players operation #_bit ehm._ = #_temp_id ehm._
+scoreboard players operation #_bit ehm._ %= #3 ehm._
+scoreboard players operation #_temp_id ehm._ /= #3 ehm._

@@ -1,10 +1,14 @@
 ## AUTHOR : Picarrow
 
-# Track IDs of entities, in addition to variables and constants
-scoreboard objectives add ehm.id dummy
-scoreboard players set #3 ehm.id 3
+# Track variables and constants
+scoreboard objectives add ehm._ dummy
+scoreboard players set $detection ehm._ 1
+scoreboard players set #3 ehm._ 3
 
-# Track each bit of an entity's ID
+# Track entity IDs
+scoreboard objectives add ehm.id dummy
+
+# Track each bit of entity IDs
 scoreboard objectives add ehm.id.0 dummy
 scoreboard objectives add ehm.id.1 dummy
 scoreboard objectives add ehm.id.2 dummy

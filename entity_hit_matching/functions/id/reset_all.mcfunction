@@ -1,8 +1,6 @@
 ## AUTHOR : Picarrow
 
 scoreboard players reset * ehm.id
-scoreboard players set #3 ehm.id 3
-
 scoreboard players reset * ehm.id.0
 scoreboard players reset * ehm.id.1
 scoreboard players reset * ehm.id.2
