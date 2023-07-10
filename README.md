@@ -5,7 +5,7 @@ It provides a reliable way to detect entities that exchange damage with players.
 ## How to Use
 Before you can use it, the namespace must be installed.
 First, add the namespace to the data folder of your data pack.
-Then, call the 'entity_hit_matching:load' and 'entity_hit_matching:tick' functions from the 'minecraft:#load' and 'minecraft:#tick' function tags respectively.
+Then, call the 'hit_match:load' and 'hit_match:tick' functions from the 'minecraft:#load' and 'minecraft:#tick' function tags respectively.
 
 You are intended to interface with the namespace by altering only the data pack tags inside the namespace.
 By keeping your modifications within these tags, compatibility across data packs should be easier to maintain.
@@ -36,9 +36,9 @@ Add the functions you wish to execute on an event to the event's respective func
 The victim is always the executor of these function tags.  
 The execution position, rotation, and dimension are also that of the victim.
 
-The direct entity can be referenced using '**/execute as @e[predicate=entity_hit_matching:is_direct,limit=1] ...**'.  
+The direct entity can be referenced using '**/execute as @e[predicate=hit_match:is_direct,limit=1] ...**'.  
 If the direct entity is a projectile, it'll likely have a source.  
-The source entity can be referenced using '**/execute as @e[predicate=entity_hit_matching:is_direct,limit=1] _on_ _origin_ ...**'.  
+The source entity can be referenced using '**/execute as @e[predicate=hit_match:is_direct,limit=1] _on_ _origin_ ...**'.  
 '**/execute on attacker**' can be used as a shortcut to reference *living* source entities.
 ## Caveat of '/damage'
 When '/damage' is used to exchange damage between a player and another entity, it may come with an unnecessary performance cost.
@@ -46,9 +46,9 @@ This is because the command can trigger the 'player_hurt_entity' and 'entity_hur
 It is highly recommended that you disable hit detection while running '/damage'-related commands.
 The following code sample demonstrates how to do this:
 ```
-function entity_hit_matching:_/detection/disable
+function hit_match:_/detection/disable
 damage PersonA 5 minecraft:generic by PersonB from PersonC
-function entity_hit_matching:_/detection/enable
+function hit_match:_/detection/enable
 ```
 ## Credit
 Thanks to [@nphhpn](https://github.com/nphhpn), who theorized the general concept and implementation.  
