@@ -43,19 +43,12 @@ The source entity can be referenced using '**/execute as @e[predicate=entity_hit
 ## Caveat of '/damage'
 When '/damage' is used to exchange damage between a player and another entity, it may come with an unnecessary performance cost.
 This is because the command can trigger the 'player_hurt_entity' and 'entity_hurt_player' advancement triggers, which fire expensive criteria checks.
-It is highly recommended that you temporarily disable hit detection for players that are the victim or source entity.
+It is highly recommended that you disable hit detection while running '/damage'-related commands.
 The following code sample demonstrates how to do this:
 ```
-# Disable Hit Detection
-execute as PersonA run function entity_hit_matching:_/off
-execute as PersonB run function entity_hit_matching:_/off
-
-# PersonA is the victim, and PersonB is the source
+function entity_hit_matching:_/detection/disable
 damage PersonA 5 minecraft:generic by PersonB from PersonC
-
-# Re-enable Hit Detection
-execute as PersonA run function entity_hit_matching:_/on
-execute as PersonB run function entity_hit_matching:_/on
+function entity_hit_matching:_/detection/enable
 ```
 ## Credit
 Thanks to [@nphhpn](https://github.com/nphhpn), who theorized the general concept and implementation.  
