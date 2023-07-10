@@ -18,7 +18,7 @@
         "entity": [
           {
             "condition": "minecraft:reference",
-            "name": "entity_hit_matching:has_no_id"
+            "name": "hit_match:has_no_id"
           }
         ]
       }
@@ -837,6 +837,6 @@
     ]
   ],
   "rewards": {
-    "function": "entity_hit_matching:hurt_target/reward"
+    "function": "hit_match:hurt_target/reward"
   }
 }

@@ -394,6 +394,6 @@
     ]
   ],
   "rewards": {
-    "function": "entity_hit_matching:hurt_player/reward"
+    "function": "hit_match:hurt_player/reward"
   }
 }
