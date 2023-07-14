@@ -15,4 +15,4 @@ execute if entity @s[advancements={hit_match:player_hurts_target={victim_has_no_
 advancement revoke @s only hit_match:player_hurts_target
 
 # Run the provided functions that work off of this reward function
-execute if score $direct ehm._ = $direct ehm._ if score $victim ehm._ = $victim ehm._ as @e[predicate=hit_match:is_victim,limit=1] at @s run function #hit_match:target_is_hurt_by_player
+execute if score $direct ehm._ = $direct ehm._ if score $victim ehm._ = $victim ehm._ run function #hit_match:player_hurts_target
