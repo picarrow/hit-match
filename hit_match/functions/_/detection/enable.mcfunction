@@ -1,3 +1,3 @@
 ## AUTHOR : Picarrow
 
-function hit_match:detection/enable/_
+function hit_match:detection/enable

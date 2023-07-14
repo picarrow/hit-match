@@ -5,7 +5,7 @@ execute if score $detection ehm._ matches 0 run return 0
 
 # Determine the id of the entity inflicting damage
 scoreboard players reset $direct ehm._
-execute if entity @s[advancements={hit_match:target_hurts_player={direct_has_no_id=false}}] run function hit_match:hurt_player/find_direct_id
+execute if entity @s[advancements={hit_match:target_hurts_player={direct_has_no_id=false}}] run function hit_match:advancement/target_hurts_player/reward_1
 
 # Determine the id of the entity receiving damage
 scoreboard players operation $victim ehm._ = @s ehm.id

@@ -837,6 +837,6 @@
     ]
   ],
   "rewards": {
-    "function": "hit_match:hurt_target/reward"
+    "function": "hit_match:advancement/player_hurts_target/reward"
   }
 }
