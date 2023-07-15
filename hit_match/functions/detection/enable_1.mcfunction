@@ -1,6 +1,6 @@
 ## AUTHOR : Picarrow
 
-advancement revoke @s only hit_match:player_hurts_target
-advancement revoke @s only hit_match:target_hurts_player
+advancement revoke @s only hit_match:player_hurt_entity
+advancement revoke @s only hit_match:entity_hurt_player
 
 tag @s remove ehm.detection_off
