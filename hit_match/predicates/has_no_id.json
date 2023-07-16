@@ -5,16 +5,8 @@
     "entity": "this",
     "scores": {
       "ehm.id": {
-        "min": {
-          "type": "minecraft:score",
-          "target": "this",
-          "score": "ehm.id"
-        },
-        "max": {
-          "type": "minecraft:score",
-          "target": "this",
-          "score": "ehm.id"
-        }
+        "min": 0,
+        "max": 19682
       }
     }
   }
