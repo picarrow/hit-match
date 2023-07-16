@@ -1,44 +1,39 @@
 ***Download Stable Versions from [Releases](https://github.com/picarrow/hit-match/releases)***
-# Hit Match v1.4.0
+# Hit Match v1.5.0
 This data pack namespace is intended to serve as a library for other data packs.
 It provides a reliable way to detect entities that exchange damage with players.
 ## How to Use
-Before you can use it, the namespace must be installed.
-First, add the namespace to the data folder of your data pack.
-Then, call the 'hit_match:load' and 'hit_match:tick' functions from the 'minecraft:#load' and 'minecraft:#tick' function tags respectively.
+Add the namespace to the data folder of your data pack, and call the 'hit_match:load' and 'hit_match:tick' functions from the 'minecraft:#load' and 'minecraft:#tick' function tags respectively.
 
-You are intended to interface with the namespace by altering only the data pack tags inside the namespace.
-By keeping your modifications within these tags, compatibility across data packs should be easier to maintain.
-There is one entity type tag, and there are two function tags for you to modify.
-### Entity Type Tag: 'targets'
-The members of entity type tag '***targets***', referred to as **target entities**, are ID-able by the library, which enables them to be detectable.  
-It is important to note that adding an entity to this list does not cover that entity's projectile entities; those must be added individually.  
-Keep in mind, adding more entities than necessary may result in greater performance costs.  
-**DO NOT** remove 'minecraft:player' from the list.
+You are intended to interface with the namespace by altering only the json tags inside the namespace.
+By keeping your modifications within these tags, compatibility across data packs is certain.
+There is one entity type tag and two function tags for you to modify.
+### Entity Type Tag: targets
+The members of entity type tag '***targets***' are referred to as **target entities**.
+Target entities are ID-able by the library, which enables them to be detectable.
+Adding more entities than necessary to this tag will likely result in greater performance costs.
+### Function Tags: player_hurts_entity & player_is_hurt_by_entity
+'**_player_hurts_entity_**' executes when a *player damages an entity*.  
+'**_player_is_hurt_by_entity_**' executes when a *player is damaged by an entity*.
 
-Examples:  
-If you want to detect a player damaging a skeleton or a skeleton meleeing a player, you must add 'minecraft:skeleton'.  
-And if you want to detect a skeleton shooting a player, you must also add 'minecraft:arrow'.
-### Function Tags: target_is_hurt_by_player & player_is_hurt_by_target
-These two function tags behave similarly.
-They are executed when a target entity exchanges damage with a player.  
-'**_target_is_hurt_by_player_**' is executed when a *target entity is damaged by a player*.  
-'**_player_is_hurt_by_target_**' is executed when a *player is damaged by a target entity*.  
-Add the functions you wish to execute on an event to the event's respective function tag.
+Add functions that you want to execute on either event to the respective function tag.  
+The player is the executor of these function tags.  
+The execution position, rotation, and dimension are also that of the player.
 <details>
 <summary>Definitions!</summary>
 
-**Victim Entity** - the entity being dealt the damage  
-**Source Entity** - the entity responsible for dealing the damage  
+**Victim Entity** - the entity that has been dealt damage  
+**Source Entity** - the entity that is responsible for the dealt damage  
 **Direct Entity** - the entity that actually dealt the damage
 </details>
 
-The victim is always the executor of these function tags.  
-The execution position, rotation, and dimension are also that of the victim.
+For the following predicates to work, the entity you're attemping to reference must have an ID.
 
+The victim entity can be referenced using '**/execute as @e[predicate=hit_match:is_victim,limit=1] ...**'.  
 The direct entity can be referenced using '**/execute as @e[predicate=hit_match:is_direct,limit=1] ...**'.  
 If the direct entity is a projectile, it'll likely have a source.  
-The source entity can be referenced using '**/execute as @e[predicate=hit_match:is_direct,limit=1] _on_ _origin_ ...**'.  
+The source entity can be referenced using '**/execute as @e[predicate=hit_match:is_direct,limit=1] _on_ _origin_ ...**'.
+
 '**/execute on attacker**' can be used as a shortcut to reference *living* source entities.
 ## Caveat of '/damage'
 When '/damage' is used to exchange damage between a player and another entity, it may come with an unnecessary performance cost.
