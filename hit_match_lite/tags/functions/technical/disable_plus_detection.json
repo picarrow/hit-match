@@ -1,0 +1,8 @@
+{
+  "values": [
+    {
+      "id": "hit_match:detection/disable",
+      "required": false
+    }
+  ]
+}

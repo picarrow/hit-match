@@ -1,4 +1,12 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    {
+      "id": "#hit_match_lite:targets",
+      "required": false
+    },
+    "minecraft:arrow",
+    "minecraft:player",
+    "minecraft:skeleton"
+  ]
 }

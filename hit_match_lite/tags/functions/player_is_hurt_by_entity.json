@@ -1,10 +1,6 @@
 {
   "replace": false,
   "values": [
-    {
-      "id": "#hit_match_lite:player_is_hurt_by_entity",
-      "required": false
-    },
     "zombies_evolved:hit_match/player_is_hurt_by_entity"
   ]
 }

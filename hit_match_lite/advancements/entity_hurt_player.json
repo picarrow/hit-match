@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "has_source": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {}
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hit_match_lite:advancement/entity_hurt_player/reward"
+  }
+}
