@@ -22,9 +22,9 @@ The player is the executor, and the execution position, rotation, and dimension 
 <details>
 <summary>Definitions!</summary>
 
-**Victim Entity** - the entity that has been dealt damage  
-**Source Entity** - the entity that is responsible for the dealt damage  
-**Direct Entity** - the entity that actually dealt the damage
+**Victim Entity** - the entity that has been dealt the damage  
+**Direct Entity** - the entity that dealt the damage  
+**Source Entity** - the entity that is responsible for the dealt damage
 </details>
 
 For the following predicates to work, the entity you're attemping to reference must have an ID.
