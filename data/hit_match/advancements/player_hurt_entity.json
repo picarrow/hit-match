@@ -17,8 +17,11 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:reference",
-            "name": "hit_match:has_no_id"
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "hit_match:has_id"
+            }
           }
         ]
       }
