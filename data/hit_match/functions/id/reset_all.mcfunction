@@ -1,5 +1,6 @@
 ## AUTHOR : Picarrow
 
+# Reset IDs
 scoreboard players reset * ehm.id
 scoreboard players reset * ehm.id.0
 scoreboard players reset * ehm.id.1
@@ -11,5 +12,6 @@ scoreboard players reset * ehm.id.6
 scoreboard players reset * ehm.id.7
 scoreboard players reset * ehm.id.8
 
+# Set the next UID to be assigned back to 1
 # Set to 0 once MC-229018 is resolved
 scoreboard players set #next_uid ehm._ 1

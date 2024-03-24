@@ -1,7 +1,5 @@
 ## AUTHOR : Picarrow
 
-tag @s[tag=ehm.no_uid] remove ehm.no_uid
-
 tag @s[tag=ehm.0_0] remove ehm.0_0
 tag @s[tag=ehm.0_1] remove ehm.0_1
 tag @s[tag=ehm.0_2] remove ehm.0_2
@@ -29,3 +27,5 @@ tag @s[tag=ehm.7_2] remove ehm.7_2
 tag @s[tag=ehm.8_0] remove ehm.8_0
 tag @s[tag=ehm.8_1] remove ehm.8_1
 tag @s[tag=ehm.8_2] remove ehm.8_2
+
+tag @s[tag=ehm.no_uid] remove ehm.no_uid
