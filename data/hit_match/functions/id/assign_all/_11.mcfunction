@@ -1,38 +1,37 @@
 ## AUTHOR : Picarrow
 
 # Assign a UID
-execute if score #next_uid ehm._ matches 19683.. run function hit_match:id/reset_all
 scoreboard players operation @s ehm.id = #next_uid ehm._
 scoreboard players add #next_uid ehm._ 1
 
 # Associate the base-3 UID
 scoreboard players operation #_temp_id ehm._ = @s ehm.id
 
-function hit_match:id/assign/next_bit
+function hit_match:id/assign_all/next_bit
 scoreboard players operation @s ehm.id.0 = #_bit ehm._
 
-function hit_match:id/assign/next_bit
+function hit_match:id/assign_all/next_bit
 scoreboard players operation @s ehm.id.1 = #_bit ehm._
 
-function hit_match:id/assign/next_bit
+function hit_match:id/assign_all/next_bit
 scoreboard players operation @s ehm.id.2 = #_bit ehm._
 
-function hit_match:id/assign/next_bit
+function hit_match:id/assign_all/next_bit
 scoreboard players operation @s ehm.id.3 = #_bit ehm._
 
-function hit_match:id/assign/next_bit
+function hit_match:id/assign_all/next_bit
 scoreboard players operation @s ehm.id.4 = #_bit ehm._
 
-function hit_match:id/assign/next_bit
+function hit_match:id/assign_all/next_bit
 scoreboard players operation @s ehm.id.5 = #_bit ehm._
 
-function hit_match:id/assign/next_bit
+function hit_match:id/assign_all/next_bit
 scoreboard players operation @s ehm.id.6 = #_bit ehm._
 
-function hit_match:id/assign/next_bit
+function hit_match:id/assign_all/next_bit
 scoreboard players operation @s ehm.id.7 = #_bit ehm._
 
-function hit_match:id/assign/next_bit
+function hit_match:id/assign_all/next_bit
 scoreboard players operation @s ehm.id.8 = #_bit ehm._
 
 # Append command tags that reflect the base-3 UID
