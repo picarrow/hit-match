@@ -3,7 +3,7 @@
   "entity": "this",
   "scores": {
     "ehm.id": {
-      "min": -1,
+      "min": 0,
       "max": 19682
     }
   }

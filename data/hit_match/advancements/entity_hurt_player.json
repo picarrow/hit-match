@@ -1,12 +1,12 @@
 {
   "criteria": {
-    "direct_has_no_id": {
+    "direct_has_no_uid": {
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.no_id\"]}"
+              "nbt": "{Tags:[\"ehm.no_uid\"]}"
             }
           }
         }
@@ -342,55 +342,55 @@
       "drt_bit_0_0",
       "drt_bit_0_1",
       "drt_bit_0_2",
-      "direct_has_no_id"
+      "direct_has_no_uid"
     ],
     [
       "drt_bit_1_0",
       "drt_bit_1_1",
       "drt_bit_1_2",
-      "direct_has_no_id"
+      "direct_has_no_uid"
     ],
     [
       "drt_bit_2_0",
       "drt_bit_2_1",
       "drt_bit_2_2",
-      "direct_has_no_id"
+      "direct_has_no_uid"
     ],
     [
       "drt_bit_3_0",
       "drt_bit_3_1",
       "drt_bit_3_2",
-      "direct_has_no_id"
+      "direct_has_no_uid"
     ],
     [
       "drt_bit_4_0",
       "drt_bit_4_1",
       "drt_bit_4_2",
-      "direct_has_no_id"
+      "direct_has_no_uid"
     ],
     [
       "drt_bit_5_0",
       "drt_bit_5_1",
       "drt_bit_5_2",
-      "direct_has_no_id"
+      "direct_has_no_uid"
     ],
     [
       "drt_bit_6_0",
       "drt_bit_6_1",
       "drt_bit_6_2",
-      "direct_has_no_id"
+      "direct_has_no_uid"
     ],
     [
       "drt_bit_7_0",
       "drt_bit_7_1",
       "drt_bit_7_2",
-      "direct_has_no_id"
+      "direct_has_no_uid"
     ],
     [
       "drt_bit_8_0",
       "drt_bit_8_1",
       "drt_bit_8_2",
-      "direct_has_no_id"
+      "direct_has_no_uid"
     ]
   ],
   "rewards": {

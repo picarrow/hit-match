@@ -1,4 +1,5 @@
 ## AUTHOR : Picarrow
 
 execute if entity @s[type=#hit_match:targets] run function hit_match:id/assign
-tag @s[tag=!ehm.no_id,predicate=!hit_match:has_id] add ehm.no_id
+scoreboard players set @s[predicate=!hit_match:has_uid] ehm.id -1
+tag @s[scores={ehm.id=-1}] add ehm.no_uid

@@ -5,6 +5,9 @@ scoreboard objectives add ehm._ dummy
 scoreboard players set $detection ehm._ 1
 scoreboard players set #3 ehm._ 3
 
+# Set to 0 once MC-229018 is resolved
+scoreboard players set #next_uid ehm._ 1
+
 # Track entity IDs
 scoreboard objectives add ehm.id dummy
 

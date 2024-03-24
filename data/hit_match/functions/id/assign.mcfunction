@@ -4,9 +4,9 @@
 function hit_match:id/clear_command_tags
 
 # Assign an ID
-execute if score #next_id ehm._ matches 19683.. run function hit_match:id/reset_all
-scoreboard players operation @s ehm.id = #next_id ehm._
-scoreboard players add #next_id ehm._ 1
+execute if score #next_uid ehm._ matches 19683.. run function hit_match:id/reset_all
+scoreboard players operation @s ehm.id = #next_uid ehm._
+scoreboard players add #next_uid ehm._ 1
 
 # Associate the base-3 ID
 scoreboard players operation #_temp_id ehm._ = @s ehm.id
