@@ -34,9 +34,8 @@ Function Tag:
 - `hit_match:player_is_hurt_by_entity` is called when a player is damaged by an entity.
 
 Like the `hit_match:targets` entity-type tag, the described function tags are intended to be overridden by a dependent data pack.
-The functions that are appended to these tags are where it becomes easier to select the *acting targets* of a damage exchange.
-
-The entities that produce a damage exchange are referred to as actors, and if a target is an actor, it is referred to as an acting target.
+The functions that are appended to these tags are where it can become easier to select the *actors* of a damage exchange.
+The entities that produce a damage exchange are referred to as actors.
 ### Selection of Targets
 &nbsp;&nbsp;&nbsp;&nbsp;In regards to the member functions of the aforementioned function tags, the player earning the advancement becomes the executor.
 The execution position, rotation, and dimension also become that of the same player.
@@ -54,8 +53,8 @@ For example, if a player hurts a mob by punching it, they'll become the direct e
 And if they hurt a mob by firing an arrow at it, they'll become the source entity; the arrow will become the direct entity instead.
 In the other event of an entity hurting a player, the player can only ever be the victim entity.
 
-Again, only actors that are targets, aka acting targets, become easier to select using Hit Match.
-Here's how to select all acting targets of a damage exchange.
+Hit Match makes it trivial to select the victim and direct entity if they are targets.
+Here's how to select them.
 ```mcfunction
 # Victim Entity
 execute as @e if score @s ehm.id = $victim ehm._ run say Victim Entity, selected by method 1.
@@ -66,14 +65,13 @@ execute if score $victim ehm._ = $victim ehm._ as @e[predicate=hit_match:is_vict
 execute as @e if score @s ehm.id = $direct ehm._ run say Direct Entity, selected by method 1.
 execute as @e[predicate=hit_match:is_direct] run say Direct Entity, selected by method 2.
 execute if score $direct ehm._ = $direct ehm._ as @e[predicate=hit_match:is_direct,limit=1] run say Direct Entity, selected efficiently.
-
-# Source Entity, if present
-execute as @e if score @s ehm.id = $direct ehm._ on origin run say Source Entity, selected by method 1.
-execute as @e[predicate=hit_match:is_direct] on origin run say Source Entity, selected by method 2.
-execute if score $direct ehm._ = $direct ehm._ as @e[predicate=hit_match:is_direct,limit=1] on origin run say Source Entity, selected efficiently.
 ```
-The subcommand of `execute`, `on attacker` should still be used where it applies as it is extremely efficient.
-Depending on the damage exchange, it can select either the direct or source entity, though only if they are considered a living entity.
+Unfortunately, it is not always possible to select the source entity with Hit Match, and the way to select it varies depending on the actors.
+To select it:  
+- The `execute` subcommand `on attacker` can be used when the source entity is a living entity and must be executed by the victim entity.
+- The `execute` subcommand`on origin` can be used when the direct entity has an origin and must be executed by the direct entity.
+
+`on attacker` should be used wherever else it applies as it is extremely efficient.
 ## 🟧 Caveat of `/damage`
 &nbsp;&nbsp;&nbsp;&nbsp;When the `/damage` command is used to exchange damage between a player and another entity, it invokes an unnecessary performance cost.
 This is because the command can trigger the `player_hurt_entity` and `entity_hurt_player` advancement triggers, which fire expensive criteria checks within Hit Match.
