@@ -3,11 +3,11 @@
 # Escape if detection is off
 execute if score $detection ehm._ matches 0 run return 0
 
-# Determine the id of the entity inflicting damage
+# Determine the UID of the entity inflicting damage
 scoreboard players reset $direct ehm._
 execute if entity @s[advancements={hit_match:player_hurt_entity={direct_has_no_uid=false}}] run function hit_match:advancement/player_hurt_entity/reward_1
 
-# Determine the id of the entity receiving damage
+# Determine the UID of the entity receiving damage
 scoreboard players reset $victim ehm._
 execute if entity @s[advancements={hit_match:player_hurt_entity={victim_has_no_uid=false}}] run function hit_match:advancement/player_hurt_entity/reward_2
 

@@ -1,6 +1,16 @@
 ## AUTHOR : Picarrow
 
-# Remove existing ID-related command tags
+# Remove leftover ID data
+scoreboard players reset @s ehm.id.0
+scoreboard players reset @s ehm.id.1
+scoreboard players reset @s ehm.id.2
+scoreboard players reset @s ehm.id.3
+scoreboard players reset @s ehm.id.4
+scoreboard players reset @s ehm.id.5
+scoreboard players reset @s ehm.id.6
+scoreboard players reset @s ehm.id.7
+scoreboard players reset @s ehm.id.8
+
 tag @s[tag=ehm.0_0] remove ehm.0_0
 tag @s[tag=ehm.0_1] remove ehm.0_1
 tag @s[tag=ehm.0_2] remove ehm.0_2
@@ -28,9 +38,10 @@ tag @s[tag=ehm.7_2] remove ehm.7_2
 tag @s[tag=ehm.8_0] remove ehm.8_0
 tag @s[tag=ehm.8_1] remove ehm.8_1
 tag @s[tag=ehm.8_2] remove ehm.8_2
+
 tag @s[tag=ehm.no_uid] remove ehm.no_uid
 
-# Return after assignment of a UID if the entity is a target entity
+# Return after the assignment of a UID if the entity is a target
 execute if entity @s[type=#hit_match:targets] run return run function hit_match:id/assign_all/_11
 
 # Assign an ID to know not to check the non-target again
