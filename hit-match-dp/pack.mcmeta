@@ -1,9 +1,9 @@
 {
   "pack": {
-    "pack_format": 35,
+    "pack_format": 39,
     "supported_formats": {
         "min_inclusive": 15,
-        "max_inclusive": 35
+        "max_inclusive": 39
     },
     "description": "\u00A7aHit Match \u00A7bv1.6.0"
   }
