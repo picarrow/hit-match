@@ -1,10 +1,10 @@
 {
   "pack": {
-    "pack_format": 39,
+    "pack_format": 41,
     "supported_formats": {
         "min_inclusive": 15,
-        "max_inclusive": 39
+        "max_inclusive": 41
     },
-    "description": "\u00A7aHit Match \u00A7bv1.6.0"
+    "description": "\u00A7aHit Match \u00A7bv1.6.1"
   }
 }

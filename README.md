@@ -1,4 +1,4 @@
-# Hit Match v1.6.0
+# Hit Match v1.6.1
 ## 🟧 About
 &nbsp;&nbsp;&nbsp;&nbsp;Hit Match is a Minecraft data pack library that facilitates the selection of entities that have exchanged damage with players.
 For example, it can make poisoning a mob a player hurt trivial, where often selecting the correct mob to poison is difficult.
