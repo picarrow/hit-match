@@ -840,6 +840,6 @@
     ]
   ],
   "rewards": {
-    "function": "hit_match:advancement/player_hurt_entity/reward"
+    "function": "hit_match:_advancement/_player_hurt_entity/reward/_"
   }
 }

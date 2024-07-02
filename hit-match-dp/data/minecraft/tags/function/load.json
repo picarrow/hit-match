@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "hit_match:load"
+    "hit_match:load/_"
   ]
 }

@@ -42,7 +42,7 @@ tag @s[tag=ehm.8_2] remove ehm.8_2
 tag @s[tag=ehm.no_uid] remove ehm.no_uid
 
 # Return after the assignment of a UID if the entity is a target
-execute if entity @s[type=#hit_match:targets] run return run function hit_match:id/assign_all/_11
+execute if entity @s[type=#hit_match:targets] run return run function hit_match:_id/assign_all/_11
 
 # Assign an ID to know not to check the non-target again
 scoreboard players set @s ehm.id -1

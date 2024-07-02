@@ -394,6 +394,6 @@
     ]
   ],
   "rewards": {
-    "function": "hit_match:advancement/entity_hurt_player/reward"
+    "function": "hit_match:_advancement/_entity_hurt_player/reward/_"
   }
 }
