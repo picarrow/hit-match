@@ -23,4 +23,4 @@ scoreboard objectives add ehm.id.7 dummy
 scoreboard objectives add ehm.id.8 dummy
 
 # Indicate the namespace has been initialized
-data modify storage hit_match:data root.loaded set value 1b
+data modify storage hit_match:data _.loaded set value {}
