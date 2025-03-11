@@ -1,4 +1,4 @@
-# Hit Match v2.0.0
+# Hit Match v1.7.0
 ## 🟧 About
 &nbsp;&nbsp;&nbsp;&nbsp;Hit Match is a Minecraft data pack library that facilitates the selection of entities that have exchanged damage with players.
 For example, it can make poisoning a mob a player hurt trivial, where often selecting the correct mob to poison is difficult.
@@ -69,7 +69,7 @@ execute if score $direct ehm._ = $direct ehm._ as @e[predicate=hit_match:is_dire
 Unfortunately, it is not always possible to select the source entity with Hit Match, and the way to select it varies depending on the actors.
 To select it:  
 - The `execute` subcommand `on attacker` can be used when the source entity is a living entity and must be executed by the victim entity.
-- The `execute` subcommand`on origin` can be used when the direct entity has an origin and must be executed by the direct entity.
+- The `execute` subcommand `on origin` can be used when the direct entity has an origin and must be executed by the direct entity.
 
 `on attacker` should be used wherever else it applies as it is extremely efficient.
 ## 🟧 Caveat of `/damage`
