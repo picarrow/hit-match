@@ -6,7 +6,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.no_uid\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.no_uid"]}
             }
           }
         }
@@ -17,13 +17,31 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:inverted",
-            "term": {
-              "condition": "minecraft:reference",
-              "name": "hit_match:has_uid"
-            }
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.no_uid"]}}
           }
         ]
+      }
+    },
+    "direct_damage": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "is_direct": true
+          }
+        }
+      }
+    },
+    "indirect_damage": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "is_direct": false
+          }
+        }
       }
     },
     "drt_bit_0_0": {
@@ -32,7 +50,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.0_0\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.0_0"]}
             }
           }
         }
@@ -44,7 +62,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.0_1\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.0_1"]}
             }
           }
         }
@@ -56,7 +74,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.0_2\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.0_2"]}
             }
           }
         }
@@ -68,7 +86,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.1_0\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.1_0"]}
             }
           }
         }
@@ -80,7 +98,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.1_1\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.1_1"]}
             }
           }
         }
@@ -92,7 +110,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.1_2\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.1_2"]}
             }
           }
         }
@@ -104,7 +122,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.2_0\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.2_0"]}
             }
           }
         }
@@ -116,7 +134,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.2_1\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.2_1"]}
             }
           }
         }
@@ -128,7 +146,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.2_2\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.2_2"]}
             }
           }
         }
@@ -140,7 +158,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.3_0\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.3_0"]}
             }
           }
         }
@@ -152,7 +170,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.3_1\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.3_1"]}
             }
           }
         }
@@ -164,7 +182,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.3_2\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.3_2"]}
             }
           }
         }
@@ -176,7 +194,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.4_0\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.4_0"]}
             }
           }
         }
@@ -188,7 +206,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.4_1\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.4_1"]}
             }
           }
         }
@@ -200,7 +218,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.4_2\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.4_2"]}
             }
           }
         }
@@ -212,7 +230,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.5_0\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.5_0"]}
             }
           }
         }
@@ -224,7 +242,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.5_1\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.5_1"]}
             }
           }
         }
@@ -236,7 +254,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.5_2\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.5_2"]}
             }
           }
         }
@@ -248,7 +266,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.6_0\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.6_0"]}
             }
           }
         }
@@ -260,7 +278,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.6_1\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.6_1"]}
             }
           }
         }
@@ -272,7 +290,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.6_2\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.6_2"]}
             }
           }
         }
@@ -284,7 +302,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.7_0\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.7_0"]}
             }
           }
         }
@@ -296,7 +314,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.7_1\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.7_1"]}
             }
           }
         }
@@ -308,7 +326,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.7_2\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.7_2"]}
             }
           }
         }
@@ -320,7 +338,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.8_0\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.8_0"]}
             }
           }
         }
@@ -332,7 +350,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.8_1\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.8_1"]}
             }
           }
         }
@@ -344,7 +362,7 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"ehm.8_2\"]}"
+              "minecraft:entity_tags": {"any_of": ["ehm.8_2"]}
             }
           }
         }
@@ -355,11 +373,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.0": 0
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.0_0"]}}
           }
         ]
       }
@@ -369,11 +385,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.0": 1
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.0_1"]}}
           }
         ]
       }
@@ -383,11 +397,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.0": 2
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.0_2"]}}
           }
         ]
       }
@@ -397,11 +409,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.1": 0
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.1_0"]}}
           }
         ]
       }
@@ -411,11 +421,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.1": 1
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.1_1"]}}
           }
         ]
       }
@@ -425,11 +433,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.1": 2
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.1_2"]}}
           }
         ]
       }
@@ -439,11 +445,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.2": 0
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.2_0"]}}
           }
         ]
       }
@@ -453,11 +457,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.2": 1
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.2_1"]}}
           }
         ]
       }
@@ -467,11 +469,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.2": 2
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.2_2"]}}
           }
         ]
       }
@@ -481,11 +481,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.3": 0
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.3_0"]}}
           }
         ]
       }
@@ -495,11 +493,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.3": 1
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.3_1"]}}
           }
         ]
       }
@@ -509,11 +505,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.3": 2
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.3_2"]}}
           }
         ]
       }
@@ -523,11 +517,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.4": 0
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.4_0"]}}
           }
         ]
       }
@@ -537,11 +529,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.4": 1
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.4_1"]}}
           }
         ]
       }
@@ -551,11 +541,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.4": 2
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.4_2"]}}
           }
         ]
       }
@@ -565,11 +553,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.5": 0
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.5_0"]}}
           }
         ]
       }
@@ -579,11 +565,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.5": 1
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.5_1"]}}
           }
         ]
       }
@@ -593,11 +577,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.5": 2
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.5_2"]}}
           }
         ]
       }
@@ -607,11 +589,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.6": 0
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.6_0"]}}
           }
         ]
       }
@@ -621,11 +601,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.6": 1
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.6_1"]}}
           }
         ]
       }
@@ -635,11 +613,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.6": 2
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.6_2"]}}
           }
         ]
       }
@@ -649,11 +625,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.7": 0
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.7_0"]}}
           }
         ]
       }
@@ -663,11 +637,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.7": 1
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.7_1"]}}
           }
         ]
       }
@@ -677,11 +649,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.7": 2
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.7_2"]}}
           }
         ]
       }
@@ -691,11 +661,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.8": 0
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.8_0"]}}
           }
         ]
       }
@@ -705,11 +673,9 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.8": 1
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.8_1"]}}
           }
         ]
       }
@@ -719,17 +685,19 @@
       "conditions": {
         "entity": [
           {
-            "condition": "minecraft:entity_scores",
+            "condition": "minecraft:entity_properties",
             "entity": "this",
-            "scores": {
-              "ehm.id.8": 2
-            }
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.8_2"]}}
           }
         ]
       }
     }
   },
   "requirements": [
+    [
+      "direct_damage",
+      "indirect_damage"
+    ],
     [
       "drt_bit_0_0",
       "drt_bit_0_1",

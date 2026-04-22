@@ -1,16 +1,6 @@
 ## AUTHOR : Picarrow
 
 # Remove leftover ID data
-scoreboard players reset @s ehm.id.0
-scoreboard players reset @s ehm.id.1
-scoreboard players reset @s ehm.id.2
-scoreboard players reset @s ehm.id.3
-scoreboard players reset @s ehm.id.4
-scoreboard players reset @s ehm.id.5
-scoreboard players reset @s ehm.id.6
-scoreboard players reset @s ehm.id.7
-scoreboard players reset @s ehm.id.8
-
 tag @s[tag=ehm.0_0] remove ehm.0_0
 tag @s[tag=ehm.0_1] remove ehm.0_1
 tag @s[tag=ehm.0_2] remove ehm.0_2

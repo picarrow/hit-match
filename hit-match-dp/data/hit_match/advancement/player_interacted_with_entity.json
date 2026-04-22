@@ -1,0 +1,399 @@
+{
+  "criteria": {
+    "victim_has_no_uid": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.no_uid"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_0_0": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.0_0"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_0_1": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.0_1"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_0_2": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.0_2"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_1_0": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.1_0"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_1_1": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.1_1"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_1_2": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.1_2"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_2_0": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.2_0"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_2_1": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.2_1"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_2_2": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.2_2"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_3_0": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.3_0"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_3_1": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.3_1"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_3_2": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.3_2"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_4_0": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.4_0"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_4_1": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.4_1"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_4_2": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.4_2"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_5_0": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.5_0"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_5_1": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.5_1"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_5_2": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.5_2"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_6_0": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.6_0"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_6_1": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.6_1"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_6_2": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.6_2"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_7_0": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.7_0"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_7_1": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.7_1"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_7_2": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.7_2"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_8_0": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.8_0"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_8_1": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.8_1"]}}
+          }
+        ]
+      }
+    },
+    "vtm_bit_8_2": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {"minecraft:entity_tags": {"any_of": ["ehm.8_2"]}}
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "vtm_bit_0_0",
+      "vtm_bit_0_1",
+      "vtm_bit_0_2",
+      "victim_has_no_uid"
+    ],
+    [
+      "vtm_bit_1_0",
+      "vtm_bit_1_1",
+      "vtm_bit_1_2",
+      "victim_has_no_uid"
+    ],
+    [
+      "vtm_bit_2_0",
+      "vtm_bit_2_1",
+      "vtm_bit_2_2",
+      "victim_has_no_uid"
+    ],
+    [
+      "vtm_bit_3_0",
+      "vtm_bit_3_1",
+      "vtm_bit_3_2",
+      "victim_has_no_uid"
+    ],
+    [
+      "vtm_bit_4_0",
+      "vtm_bit_4_1",
+      "vtm_bit_4_2",
+      "victim_has_no_uid"
+    ],
+    [
+      "vtm_bit_5_0",
+      "vtm_bit_5_1",
+      "vtm_bit_5_2",
+      "victim_has_no_uid"
+    ],
+    [
+      "vtm_bit_6_0",
+      "vtm_bit_6_1",
+      "vtm_bit_6_2",
+      "victim_has_no_uid"
+    ],
+    [
+      "vtm_bit_7_0",
+      "vtm_bit_7_1",
+      "vtm_bit_7_2",
+      "victim_has_no_uid"
+    ],
+    [
+      "vtm_bit_8_0",
+      "vtm_bit_8_1",
+      "vtm_bit_8_2",
+      "victim_has_no_uid"
+    ]
+  ],
+  "rewards": {
+    "function": "hit_match:_advancement/_player_interacts_with_entity/reward/_"
+  }
+}
