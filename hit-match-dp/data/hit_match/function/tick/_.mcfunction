@@ -1,5 +1,8 @@
 ## AUTHOR : Picarrow
 
+# ...
+execute if score #in_hit_context ehm._ matches 1 run function hit_match:tick/_1
+
 # Assign IDs to the entities that need them
 function hit_match:_id/assign_all/_
 

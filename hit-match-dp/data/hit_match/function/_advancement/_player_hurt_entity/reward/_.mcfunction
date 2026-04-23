@@ -26,9 +26,9 @@ advancement revoke @s only hit_match:player_hurt_entity
 scoreboard players reset #is_uuid_of_victim_ready ehm._
 scoreboard players reset #is_uuid_of_direct_ready ehm._
 scoreboard players reset #is_uuid_of_source_ready ehm._
-scoreboard players reset $victim_life_cache ehm._
-scoreboard players reset $direct_life_cache ehm._
-scoreboard players reset $source_life_cache ehm._
+scoreboard players reset $is_victim_alive ehm._
+scoreboard players reset $is_direct_alive ehm._
+scoreboard players reset $is_source_alive ehm._
 scoreboard players set #in_hit_context ehm._ 1
 
 # Run the provided functions that work off of this reward function

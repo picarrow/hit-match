@@ -78,12 +78,12 @@ execute if score $source ehm._ = $source ehm._ as @e[predicate=hit_match:is_sour
 To do this, there are three functions for each actor: `hit_match:_pulse/victim/_`, `hit_match:_pulse/direct/_`, `hit_match:_pulse/source/_`.
 Executing one of these functions will fetch and cache the UUID of the respective actor into its respective storage location: `hit_match:_pulse/victim/_` will cache its UUID to the storage location `hit_match:data _.glob.uuid_of_victim`.
 In addition, a score is set on each call to one of these pulse functions that can be used to determine if the respective actor is alive or not.
-The score that gets set belongs to the score holder `$victim_life_cache` and the scoreboard objective `ehm._`.
+The score that gets set belongs to the score holder `$is_victim_alive` and the scoreboard objective `ehm._`.
 ```mcfunction
 # Retrieves and caches the UUID of the victim entity on first call.
 # Subsequent calls would not incur the cost of retrieving the UUID again and would just evaluate the alive status of the entity.
 function hit_match:_pulse/victim/_
-execute if score $victim_life_cache ehm._ matches 1 run say Victim is alive.
+execute if score $is_victim_alive ehm._ matches 1 run say Victim is alive.
 
 # Elegant way to detect if the victim is dead and call a function if so.
 # With the ability to macro in the UUID of the dead entity to that function.
