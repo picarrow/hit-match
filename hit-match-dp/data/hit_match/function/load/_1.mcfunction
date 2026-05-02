@@ -14,6 +14,8 @@ scoreboard objectives add ehm.id dummy
 # ...
 scoreboard objectives add ehm.death_detect.tracked dummy
 scoreboard objectives add ehm.death_detect.selectable dummy
+scoreboard objectives add ehm.death_detect.lifetime dummy
+scoreboard objectives add ehm.death_detect.max_lifetime dummy
 
 # Indicate the namespace has been initialized
 data modify storage hit_match:data _.loaded set value {}
