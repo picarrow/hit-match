@@ -11,4 +11,5 @@ $data modify storage hit_match:data _.death_detect.polls[{poll_rate:$(poll_rate)
 
 # ...
 data modify storage hit_match:data _.func."death_detect.track".temp.entry.poll_rate set from storage hit_match:data _.func."death_detect.track".temp.poll_rate
+execute store result storage hit_match:data _.func."death_detect.track".temp.entry.lifetime int 1 run scoreboard players get #_lifetime ehm._
 data modify storage hit_match:data _.death_detect.list_of_tracked_uuids append from storage hit_match:data _.func."death_detect.track".temp.entry
