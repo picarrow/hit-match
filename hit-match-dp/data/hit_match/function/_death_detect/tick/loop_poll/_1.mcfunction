@@ -1,7 +1,9 @@
 ## AUTHOR : Picarrow
 
+# ...
 $data modify storage hit_match:data _.func."death_detect.tick".temp.current_poll set from storage hit_match:data _.death_detect.polls[{poll_rate:$(current_poll_rate)}]
 
+# ...
 execute store result score #_entries_left ehm._ if data storage hit_match:data _.func."death_detect.tick".temp.current_poll.live_queue[]
 execute store result score #_polls_left ehm._ run data get storage hit_match:data _.func."death_detect.tick".temp.current_poll.polls_left
 scoreboard players operation #_entries_left_in_this_cycle ehm._ = #_entries_left ehm._
