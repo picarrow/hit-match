@@ -11,5 +11,9 @@ scoreboard players set #next_uid ehm._ 1
 # Track entity IDs
 scoreboard objectives add ehm.id dummy
 
+# ...
+scoreboard objectives add ehm.death_detect.tracked dummy
+scoreboard objectives add ehm.death_detect.selectable dummy
+
 # Indicate the namespace has been initialized
 data modify storage hit_match:data _.loaded set value {}

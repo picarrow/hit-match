@@ -11,4 +11,4 @@ execute if score $detection ehm._ matches 0 run function hit_match:_detection/di
 execute if score $detection ehm._ matches 1 run function hit_match:_detection/enable/_
 
 # ...
-execute if data storage hit_match:data _.death_detect.active_poll_rates[] run function hit_match:detect_death/_
+function hit_match:_death_detect/tick/_
