@@ -1,13 +1,5 @@
 ## AUTHOR : Picarrow
 
 # ...
-execute store result score #_is_target_entity ehm._ if entity @s[predicate=hit_match:has_uid]
-execute unless score #_is_target_entity ehm._ matches 1 run function hit_match:_death_detect/untrack/_31
-execute if score #_is_target_entity ehm._ matches 1 run function hit_match:_death_detect/untrack/_32
-
-# ...
-function hit_match:_death_detect/untrack/_33 with storage hit_match:data _.func."death_detect.untrack".temp
-function hit_match:_death_detect/untrack/_34 with storage hit_match:data _.func."death_detect.untrack".temp
-
-# ...
-scoreboard players reset @s ehm.death_detect.tracked
+tellraw @a ["",{"color":"green","text":"[Hit Match]"},{"color":"red","text":" Error;"},{"color":"gray","text":" Func hit_match:_death_detect/untrack requires the entity context of an entity that is tracked."}]
+function hit_match:error/_

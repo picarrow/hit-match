@@ -2,7 +2,7 @@
 
 # Create a poll for the poll rate if there is not one
 $data modify storage hit_match:data _.func."death_detect.track".temp.poll set from storage hit_match:data _.death_detect.polls[{poll_rate:$(poll_rate)}]
-execute unless data storage hit_match:data _.func."death_detect.track".temp.poll run function hit_match:_death_detect/track/_331
+execute unless data storage hit_match:data _.func."death_detect.track".temp.poll run function hit_match:_death_detect/track/_61
 
 # ...
 data modify storage hit_match:data _.func."death_detect.track".temp.poll.queue append from storage hit_match:data _.func."death_detect.track".temp.entry
