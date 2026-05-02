@@ -1,5 +1,6 @@
 ## AUTHOR : Picarrow
 
+# ...
 scoreboard players set $victim ehm._ 0
 execute if entity @s[advancements={hit_match:player_interacted_with_entity={vtm_bit_0_1=true}}] run scoreboard players add $victim ehm._ 1
 execute if entity @s[advancements={hit_match:player_interacted_with_entity={vtm_bit_0_2=true}}] run scoreboard players add $victim ehm._ 2

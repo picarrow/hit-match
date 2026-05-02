@@ -29,6 +29,7 @@ tag @s[tag=ehm.8_0] remove ehm.8_0
 tag @s[tag=ehm.8_1] remove ehm.8_1
 tag @s[tag=ehm.8_2] remove ehm.8_2
 
+# ...
 tag @s[tag=ehm.no_uid] remove ehm.no_uid
 
 # Return after the assignment of a UID if the entity is a target
