@@ -1,10 +1,18 @@
 # Hit Match v1.8.0
 ## 🟧 About
-&nbsp;&nbsp;&nbsp;&nbsp;Hit Match is a Minecraft data pack library that facilitates the selection of entities that have exchanged damage with players.
-For example, it can make poisoning a mob a player hurt trivial, where often selecting the correct mob to poison is difficult.
-It can even trivialize the application of an arrow's custom effects to a pierced mob.
-As Hit Match is built on the advancement system, and advancements are inherent to only players, it cannot process damage exchanges that do not involve a player.
-That includes situations where a mob hurts another mob.
+&nbsp;&nbsp;&nbsp;&nbsp;Hit Match is a Minecraft data-pack library that provides solutions to common cases where it would otherwise be difficult to select the correct entity.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Part of its implementation uses an advancement-based approach to detect when certain events occur and what entities contributed to them.
+As advancements are inherent to only players, a player must be involved in the event for the event to be detected.
+This system covers damage exhanges that involve a player and interactions with an entity that originate from a player.
+Each entity that participated in these event, which are to be referred to as hit events, can be easily selected.
+For example, this system can make poisoning a mob a player hurt trivial, where often selecting the correct mob to poison is difficult.
+It can also trivialize the application of an arrow's custom effects to a pierced mob.
+
+&nbsp;&nbsp;&nbsp;&nbsp;There is another system in Hit Match that can detect any entity that is dying.
+For an entity to be considered dying, it has to be a living entity and has to be performing its death animation.
+It is to be referred to as a death event when an entity is detected dying.
+This system is based on techniques that involve entity selectors and entity score retrieval.
 ## 🟧 Installation
 ***It is recommended that a stable version from [Releases](https://github.com/picarrow/hit-match/releases) is installed.***
 
@@ -17,7 +25,7 @@ Be sure to install the relevant version of that, which can be found at the repo 
 ## 🟧 How To Use
 ***Tampering with the files of Hit Match in any way that is not described in the following section can jeopardize compatibility between packs.***
 
-&nbsp;&nbsp;&nbsp;&nbsp;Hit Match contains one entity-type tag and three function tags that may be overridden.
+&nbsp;&nbsp;&nbsp;&nbsp;Hit Match contains one entity-type tag and four function tags that may be overridden.
 For a data pack to override these tags, it must create these function tags within itself, keeping the namespace as `hit_match`.
 In the overrides for these tags, it is crucial that the JSON key `replace` is set to `false`.
 This ensures that the members of these overrides are appended beside, rather than replacing, existing members that have been added by other packs.
@@ -73,7 +81,7 @@ execute as @e if score @s ehm.id = $source ehm._ run say Source Entity, selected
 execute as @e[predicate=hit_match:is_source] run say Source Entity, selected by method 2.
 execute if score $source ehm._ = $source ehm._ as @e[predicate=hit_match:is_source,limit=1] run say Source Entity, selected efficiently.
 ```
-### 🟧 Respond to Death of a Target
+### Respond to Death of a Target
 &nbsp;&nbsp;&nbsp;&nbsp;An advanced feature is implemented that enables the UUIDs of any actor of a hit event to be queried and its alive status to be determined.
 To do this, there are three functions for each actor: `hit_match:_pulse/victim/_`, `hit_match:_pulse/direct/_`, `hit_match:_pulse/source/_`.
 Executing one of these functions will fetch and cache the UUID of the respective actor into its respective storage location: `hit_match:_pulse/victim/_` will cache its UUID to the storage location `hit_match:data _.glob.uuid_of_victim`.
@@ -89,6 +97,23 @@ execute if score $is_victim_alive ehm._ matches 1 run say Victim is alive.
 # With the ability to macro in the UUID of the dead entity to that function.
 execute unless function hit_match:_pulse/victim/_ run function my_namespace:foo with storage hit_match:data _.glob
 ```
+### Detecting a Dying Entity
+&nbsp;&nbsp;&nbsp;&nbsp;`function hit_match:_death_detect/track/_` can be used to enter an entity into the death detection system.
+It accepts two arguments: a poll rate and a lifetime.
+Poll rate determines how often the entity is checked for the status of dying; the highest poll rate is most efficient.
+It can range anywhere from 1 to 20.
+Only use a lower poll rate when a quicker response time is necessary.
+Lifetime determines how long (in ticks) the entity can be unloaded for before it is removed from the death detection system for performance.
+It can range anywhere from 1 to 24000 (cap of 20 minutes).
+These arguments can be changed with a command such as the following: `/data modify storage hit_match:data _.func."death_detect.track".in set value {poll_rate:20,lifetime:1000}`.  
+
+&nbsp;&nbsp;&nbsp;&nbsp;`function hit_match:_death_detect/untrack/_` can be used to remove an entity from the death detection system.
+
+&nbsp;&nbsp;&nbsp;&nbsp;`function hit_match:_death_detect/untrack_all/_` can be used to remove all entities from the death detection system.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Use the function tag `#hit_match:tick_dying` to add functions that can operate on the entities that are detected to be dying.
+The execution context is already `as` and `at` the dying entity in the functions that are called by this function tag.
+The uuid of the entity and the rate it is being polled at can be retrieved from the storage location `hit_match:data _.glob`, which contains the keys `uuid` and `poll_rate`.
 ## 🟧 Caveat of `/damage`
 &nbsp;&nbsp;&nbsp;&nbsp;When the `/damage` command is used to exchange damage between a player and another entity, it invokes an unnecessary performance cost.
 This is because the command can trigger the `player_hurt_entity` and `entity_hurt_player` advancement triggers, which fire expensive criteria checks within Hit Match.
