@@ -1,5 +1,8 @@
 ## AUTHOR : Picarrow
 
+# Error
+execute if score #in_hit_context ehm._ matches 1 run function hit_match:_id/reset_all/_1
+
 # Reset IDs
 scoreboard players reset * ehm.id
 

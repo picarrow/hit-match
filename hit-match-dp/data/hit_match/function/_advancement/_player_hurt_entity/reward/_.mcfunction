@@ -3,13 +3,17 @@
 # Escape if detection is off
 execute if score $detection ehm._ matches 0 run return 0
 
+# ...
+execute if score #is_gu_installed ehm._ matches 0 run return run advancement revoke @s only hit_match:player_hurt_entity
+execute unless entity @s[advancements={hit_match:player_hurt_entity=true}] run function hit_match:_advancement/_player_hurt_entity/reward/_1
+
 # Determine the UID of the direct entity
 scoreboard players reset $direct ehm._
-execute if entity @s[advancements={hit_match:player_hurt_entity={direct_has_no_uid=false}}] run function hit_match:_advancement/_player_hurt_entity/reward/_1
+execute if entity @s[advancements={hit_match:player_hurt_entity={direct_has_no_uid=false}}] run function hit_match:_advancement/_player_hurt_entity/reward/_2
 
 # Determine the UID of the victim entity
 scoreboard players reset $victim ehm._
-execute if entity @s[advancements={hit_match:player_hurt_entity={victim_has_no_uid=false}}] run function hit_match:_advancement/_player_hurt_entity/reward/_2
+execute if entity @s[advancements={hit_match:player_hurt_entity={victim_has_no_uid=false}}] run function hit_match:_advancement/_player_hurt_entity/reward/_3
 
 # Determine the UID of the source entity
 scoreboard players reset $source ehm._

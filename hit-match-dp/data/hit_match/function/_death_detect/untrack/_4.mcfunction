@@ -1,5 +1,5 @@
 ## AUTHOR : Picarrow
 
 # ...
-function gu:generate
-data modify storage hit_match:data _.func."death_detect.untrack".temp.uuid set from storage gu:main out
+tellraw @a ["",{"color":"green","text":"[Hit Match]"},{"color":"red","text":" Error;"},{"color":"gray","text":" Func hit_match:_death_detect/untrack requires the dependency GU to be installed."}]
+function hit_match:error/_

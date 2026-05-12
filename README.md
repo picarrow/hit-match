@@ -1,4 +1,4 @@
-# Hit Match v1.8.0
+# Hit Match v1.8.1
 ## 🟧 About
 &nbsp;&nbsp;&nbsp;&nbsp;Hit Match is a Minecraft data-pack library that provides solutions to common cases where it would otherwise be difficult to select the correct entity.
 

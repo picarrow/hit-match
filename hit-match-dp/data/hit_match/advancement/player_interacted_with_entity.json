@@ -394,6 +394,6 @@
     ]
   ],
   "rewards": {
-    "function": "hit_match:_advancement/_player_interacts_with_entity/reward/_"
+    "function": "hit_match:_advancement/_player_interacted_with_entity/reward/_"
   }
 }

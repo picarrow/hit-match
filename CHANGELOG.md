@@ -1,3 +1,7 @@
+## 1.8.1
+### Features
+- This changelog needs to be updated...
+
 ## 1.8.0
 ### Features
 - This changelog needs to be updated...
@@ -6,5 +10,6 @@
 
 ## v1.7.0
 ### Features
+- This changelog needs to be updated...
 #### General
 - Updated to MC 1.21 (not backwards compatible).

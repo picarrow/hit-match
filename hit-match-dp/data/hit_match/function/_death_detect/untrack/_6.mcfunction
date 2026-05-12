@@ -1,5 +1,5 @@
 ## AUTHOR : Picarrow
 
 # ...
-$data modify storage hit_match:data _.func."death_detect.untrack".temp.poll_rate set from storage hit_match:data _.death_detect.list_of_tracked_uuids[{uuid:"$(uuid)"}].poll_rate
-$data remove storage hit_match:data _.death_detect.list_of_tracked_uuids[{uuid:"$(uuid)"}]
+execute store result storage hit_match:data _.func."death_detect.untrack".temp.uid int 1 run scoreboard players get @s ehm.id
+function hit_match:_death_detect/untrack/_61 with storage hit_match:data _.func."death_detect.untrack".temp
