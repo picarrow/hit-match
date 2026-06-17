@@ -1,4 +1,4 @@
-# Hit Match v1.8.1
+# Hit Match v1.8.2
 ## 🟧 About
 &nbsp;&nbsp;&nbsp;&nbsp;Hit Match is a Minecraft data-pack library that provides solutions to common cases where it would otherwise be difficult to select the correct entity.
 
@@ -114,6 +114,10 @@ These arguments can be changed with a command such as the following: `/data modi
 &nbsp;&nbsp;&nbsp;&nbsp;Use the function tag `#hit_match:tick_dying` to add functions that can operate on the entities that are detected to be dying.
 The execution context is already `as` and `at` the dying entity in the functions that are called by this function tag.
 The uuid of the entity and the rate it is being polled at can be retrieved from the storage location `hit_match:data _.glob`, which contains the keys `uuid` and `poll_rate`.
+
+&nbsp;&nbsp;&nbsp;&nbsp;The death of players cannot be detected when the gamerule `doImmediateRespawn` is `true`.
+This is because players do not enter the dying state in this case.
+Player death and the contributing actors can alternatively be detected using the hit matching system.
 ## 🟧 Caveat of `/damage`
 &nbsp;&nbsp;&nbsp;&nbsp;When the `/damage` command is used to exchange damage between a player and another entity, it invokes an unnecessary performance cost.
 This is because the command can trigger the `player_hurt_entity` and `entity_hurt_player` advancement triggers, which fire expensive criteria checks within Hit Match.
@@ -125,7 +129,7 @@ damage PersonA 5 minecraft:generic by PersonB from PersonC
 function hit_match:_/detection/enable/_
 ```
 ## 🟧 Credit To
-[@nphhpn](https://github.com/nphhpn) - who theorized the general concept and implementation.  
-[@CloudWolfYT](https://github.com/CloudWolfYT) - who adapted the implementation to make intelligent use of entity tags.  
-[@XanBelOr](https://github.com/XanBelOr) - thought about integrating death detection into Hit Match-like data packs.  
+[@nphhpn](https://github.com/nphhpn) - theorized the general concept and implementation.  
+[@CloudWolfYT](https://github.com/CloudWolfYT) - adapted the implementation to make efficient use of entity tags.  
+[@XanBelOr](https://github.com/XanBelOr) - proposed the integration of death detection into Hit Match-like data packs.  
 [@gibbsly](https://github.com//gibbsly) - developed the UUID-converter dependency, GU.
